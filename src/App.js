@@ -1,7 +1,10 @@
+import styled from "styled-components";
+import Sidebar from "./Components/Sidebar";
+
 function App() {
   return (
     <div className="App">
-      <h1>Portfolio</h1>
+      <Sidebar />
     </div>
   );
 }
