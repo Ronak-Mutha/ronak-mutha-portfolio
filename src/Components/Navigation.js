@@ -110,6 +110,7 @@ const NavigationStyled = styled.nav`
         transition: all 0.4s ease-in-out;
         font-weight: 600;
         letter-spacing: 1px;
+        z-index: 10;
         &:hover {
           cursor: pointer;
           color: var(--white-color);

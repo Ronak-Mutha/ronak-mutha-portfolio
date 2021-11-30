@@ -13,7 +13,6 @@ const GlobalStyle = createGlobalStyle`
     --font-dark-color-2: #151515;
     --sidebar-dark-color: #191D2B;
     --primary-color-light: #057FFF;
-
 }
 *{
     padding:0;
@@ -32,7 +31,7 @@ body {
 a{
     font-family:inherit;
     color:inherit;
-    font-size:inherit;
+    font-size:1rem;
 }
 `;
 
