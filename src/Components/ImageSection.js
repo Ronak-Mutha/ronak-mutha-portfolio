@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import resume from "../img/resume.jpg";
-import PrimaryButton from "./PrimaryButton";
+import resume from "../assets/img/resume.jpg";
+import PrimaryLink from "../styles/PrimaryLink";
+import Resume from '../assets/docs/Ronak-Mutha-Resume.pdf';
 
 function ImageSection() {
   function getAge() {
@@ -48,7 +49,12 @@ function ImageSection() {
             <p>: Can join immediately</p>
           </div>
         </div>
-        <PrimaryButton title={"Download Cv"} />
+        <PrimaryLink
+          href={Resume}
+          download='Ronak-Mutha-Resume'
+        >
+          Download Resume{" "}
+        </PrimaryLink>
       </div>
     </ImageSectionStyled>
   );
