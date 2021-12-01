@@ -14,7 +14,7 @@ function BlogsPage() {
             return (
               <div key={blog.id} className={"blog-item"}>
                 <div className="image">
-                  <img src={blog.image} alt="" />
+                  <img src={blog.image} alt={blog.alt} />
                 </div>
                 <small className="creation-date">{blog.creation_date}</small>
                 <div className="title">

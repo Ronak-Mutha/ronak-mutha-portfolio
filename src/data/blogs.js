@@ -8,6 +8,7 @@ const blogs = [
     creation_date: "22 September 2021",
     image: blog1,
     link: "https://ronak-mutha.netlify.app/blogs/blog-01.html",
+    alt: 'Emmet Guide'
   },
   {
     id: 2,
@@ -16,6 +17,7 @@ const blogs = [
     creation_date: "23 September 2021",
     image: blog2,
     link: "https://ronak-mutha.netlify.app/blogs/blog-02.html",
+    alt: 'Arrays in JS'
   },
 ];
 
