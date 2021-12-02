@@ -47,7 +47,7 @@ function ImageSection() {
         </div>
         <PrimaryLink
           href={Resume}
-          download='Ronak-Mutha-Resume'
+          download='ronak-mutha-resume'
         >
           Download Resume{" "}
         </PrimaryLink>
