@@ -1,14 +1,14 @@
 import React from "react";
 import { MainLayout } from "../styles/Layouts";
 import Title from "../Components/Title";
-import ImageSection from "../Components/ImageSection";
+import AboutSection from "../Components/AboutSection";
 
 function AboutPage() {
   return (
     <MainLayout>
       <section>
         <Title title={"About Me"} span={"About Me"} />
-        <ImageSection />
+        <AboutSection />
       </section>
     </MainLayout>
   );

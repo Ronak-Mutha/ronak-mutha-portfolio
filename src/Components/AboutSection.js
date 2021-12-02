@@ -1,8 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import resume from "../assets/img/resume.jpg";
 import PrimaryLink from "../styles/PrimaryLink";
-import Resume from '../assets/docs/Ronak-Mutha-Resume.pdf';
+import Resume from '../assets/docs/ronak-mutha-resume.pdf';
 
 function ImageSection() {
   function getAge() {
@@ -13,10 +12,7 @@ function ImageSection() {
 
   return (
     <ImageSectionStyled>
-      <div className="left-content">
-        <img src={resume} alt="resume" />
-      </div>
-      <div className="right-content">
+      <div className="content">
         <h4>
           I am <span>Ronak Mutha</span>
         </h4>
@@ -63,20 +59,8 @@ function ImageSection() {
 const ImageSectionStyled = styled.div`
     margin-top: 5rem;
     display: flex;
-    @media screen and (max-width:1000px){
-        flex-direction: column;
-        .left-content{
-            margin-bottom: 2rem;
-        }
-    }
-    .left-content{
-        width: 100%;
-        img{
-            width: 95%;
-            object-fit: cover;
-        }
-    }
-    .right-content{
+
+    .content{
         width: 100%;
         h4{
             font-size: 2rem;
