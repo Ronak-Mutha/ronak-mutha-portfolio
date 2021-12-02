@@ -1,7 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
-
 .light-theme{
     --primary-color: #007bff;
     --primary-color-light: #057FFF;
@@ -35,9 +34,10 @@ const GlobalStyle = createGlobalStyle`
     --font-dark-color-2: #151515;
     --sidebar-dark-color: #191D2B;
     --scrollbar-bg-color: #383838;
-    --scrollbar-thump-color: #6b6b6b;
+    --scrollbar-thumb-color: #6b6b6b;
     --scrollbar-track-color: #383838;
 }
+
 *{
     margin: 0;
     padding: 0;
@@ -48,32 +48,33 @@ const GlobalStyle = createGlobalStyle`
     font-size: 1.1rem;
     
 }
+
 body{
     background-color: var(--background-dark-color);
     color: var(--font-light-color);
     transition: all .4s ease-in-out;
 }
+
 body::-webkit-scrollbar{
-    width:15px;
-    background-color: #383838;
+    width: 9px;
+    background-color:var(----scrollbar-bg-color);
 }
 body::-webkit-scrollbar-thumb{
     border-radius: 10px;
-    background-color: #6b6b6b;
+    background-color: var(--scrollbar-thumb-color);
 }
 body::-webkit-scrollbar-track{
     border-radius: 10px;
-    background-color: #383838;
+    background-color: (--scrollbar-track-color);
 }
-textarea{
-    max-width: 100%;
-}
+
 a{
     font-family: inherit;
     color: inherit;
     font-size: inherit;
     font-size: 1rem;
 }
+
 h1{
     font-size: 4rem;
     color: var(--white-color);
@@ -87,6 +88,7 @@ h1{
         font-size: 3rem
     }
 }
+
 span{
     color: var(--primary-color);
 }
@@ -95,11 +97,14 @@ h6{
     font-size: 1.2rem;
     padding-bottom: .6rem;
 }
+
 //Utilities
 .u-margin-bottom{
     margin-bottom: 4rem;
 }
-//Floting Toggler
+
+
+//Floting theme Toggler
 .light-dark-mode{
     position: fixed;
     right: 0;
@@ -118,17 +123,20 @@ h6{
       color: var(--white-color);
     }
   }
-  //Nav Toggler
+
+  //Navbar  Toggler
   .ham-burger-menu{
-      position: absolute;
-      right: 5%;
+      position: fixed;
+      right: 2%;
       top: 3%; 
       display: none;
       z-index: 15;
       svg{
           font-size: 3rem;
+          color: var(--primary-color);
       }
     }
+
     .nav-toggle{
         transform: translateX(0);
         z-index: 20;

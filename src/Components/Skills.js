@@ -9,7 +9,7 @@ function Skills() {
   return (
     <SkillsStyled>
       <MainLayout>
-        <Title title={"Resume"} span={"Resume"} />
+        <Title title={"Skills"} span={"Skills"} />
         <InnerLayout>
           <div className="skills">
             {skills.map((skill) => {

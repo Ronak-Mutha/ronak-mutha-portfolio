@@ -23,6 +23,9 @@ const ContactItemStyled = styled.div`
     background-color: var(--background-dark-grey);
     display: flex;
     align-items: center;
+    @media screen and (max-width: 502px) {
+        width: 95%;
+      }
     &:not(:last-child){
         margin-bottom: 2.5rem;
     }

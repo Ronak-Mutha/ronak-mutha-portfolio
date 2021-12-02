@@ -30,14 +30,16 @@ const ResumeItemStyled = styled.div`
     h5,
     h6 {
       font-size: 80%;
+      word-wrap: break-word;
     }
+    grid-template-columns: 1fr 4fr;
   }
   &:not(:last-child) {
     padding-bottom: 3rem;
   }
   .left-content {
     width: 100%;
-    padding-left: 20px;
+    padding-left: 1rem;
     position: relative;
     &::before {
       content: "";
@@ -55,16 +57,27 @@ const ResumeItemStyled = styled.div`
     }
   }
   .right-content {
-    padding-left: 5rem;
+    padding-left: 3rem;
     position: relative;
     &::before {
       content: "";
       position: absolute;
-      left: 0;
-      top: 15px;
+      left: -1.5rem;
+      top: 1.1rem;
       height: 2px;
       width: 2rem;
       background-color: var(--border-color);
+    }
+    @media screen and (max-width: 1000px) {
+      &::before {
+        left: 0;
+      }
+      @media screen and (max-width: 421px) {
+        padding-left: 2rem;
+        &::before {
+          width: 1rem;
+        }
+      }
     }
     h5 {
       color: var(--primary-color);
@@ -76,7 +89,7 @@ const ResumeItemStyled = styled.div`
       font-size: 1.5rem;
     }
     li:not(:last-child) {
-        list-style-type: disc;
+      list-style-type: disc;
     }
   }
 `;

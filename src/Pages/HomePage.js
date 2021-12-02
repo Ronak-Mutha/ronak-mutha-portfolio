@@ -51,6 +51,16 @@ const HomePageStyled = styled.header`
     font-size: 4rem;
     color: var(--primary-color);
   }
+  @media screen and (max-width: 502px) {
+    span {
+      font-size: 2.6rem;
+      display: block;
+    }
+
+    p {
+      text-align: left;
+    }
+  }
 
   .typography {
     position: absolute;

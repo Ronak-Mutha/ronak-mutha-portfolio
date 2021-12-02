@@ -150,7 +150,7 @@ const ContactPageStyled = styled.section`
     .form {
       width: 100%;
       @media screen and (max-width: 502px) {
-        width: 100%;
+        width: 95%;
       }
       .form-field {
         margin-top: 2rem;

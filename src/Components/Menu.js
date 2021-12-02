@@ -89,8 +89,8 @@ const MenuItemStyled = styled.div`
             background-color: var(--primary-color);
           }
           a {
-            display: grid;
-            place-items: center;
+            display: flex;
+            align-items: center;
             justify-content: center;
             transition: all 0.4s ease-in-out;
           }
@@ -121,7 +121,6 @@ const MenuItemStyled = styled.div`
             &:hover {
               background-color: var(--primary-color);
             }
-
             a {
               display: flex;
               align-items: center;

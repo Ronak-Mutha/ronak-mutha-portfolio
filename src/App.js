@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import Sidebar from "./Components/Sidebar";
 import HomePage from "./Pages/HomePage";
+import PageNotFound from "./Pages/PageNotFound";
 import { Route, Routes } from "react-router";
 import AboutPage from "./Pages/AboutPage";
 import ResumePage from "./Pages/ResumePage";
@@ -44,7 +45,6 @@ function App() {
             <Switch
               value=""
               checked={checked}
-              inputProps={{ "aria-label": "" }}
               size="medium"
               onClick={themeToggler}
             />
@@ -72,6 +72,7 @@ function App() {
           <Route path="/projects" element={<ProjectsPage />} />
           <Route path="/blogs" element={<BlogsPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="*" element={<PageNotFound />} />
         </Routes>
       </MainContentStyled>
     </div>
@@ -82,7 +83,9 @@ const MainContentStyled = styled.main`
   position: relative;
   margin-left: 16.3rem;
   min-height: 100vh;
-
+  @media screen and (max-width: 1200px) {
+    margin-left: 0;
+  }
   .lines {
     position: absolute;
     min-height: 100%;
@@ -90,7 +93,7 @@ const MainContentStyled = styled.main`
     display: flex;
     justify-content: space-evenly;
     opacity: 0.4;
-
+    z-index: -1;
     .line-1,
     .line-2,
     .line-3,
