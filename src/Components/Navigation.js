@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
-import avatar from "../assets/img/avatar.jpg";
+import avatar from "../assets/img/avatar.png";
 
 function Navigation() {
   return (
