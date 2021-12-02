@@ -12,17 +12,19 @@ function BlogsPage() {
         <InnerLayout className={"blog"}>
           {blogs.map((blog) => {
             return (
-              <div key={blog.id} className={"blog-item"}>
+              <a
+                href={blog.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                key={blog.id}
+                className={"blog-item"}
+              >
                 <div className="image">
                   <img src={blog.image} alt={blog.alt} />
                 </div>
                 <small className="creation-date">{blog.creation_date}</small>
-                <div className="title">
-                  <a href={blog.link} target="_blank" rel="noopener noreferrer">
-                    {blog.title}
-                  </a>
-                </div>
-              </div>
+                <div className="title">{blog.title}</div>
+              </a>
             );
           })}
         </InnerLayout>
@@ -59,15 +61,13 @@ const BlogsStyled = styled.div`
       }
     }
     .title {
-      a {
-        font-size: 1.5rem;
-        padding: 2rem 0;
-        color: var(--white-color);
-        cursor: pointer;
-        transition: all 0.4s ease-in-out;
-        &:hover {
-          color: var(--primary-color);
-        }
+      font-size: 1.5rem;
+      padding: 2rem 0;
+      color: var(--white-color);
+      cursor: pointer;
+      transition: all 0.4s ease-in-out;
+      &:hover {
+        color: var(--primary-color);
       }
     }
     .creation-date {
