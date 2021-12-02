@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 
-function ContactItem({title, icon, contact1}) {
+function ContactItem({title, icon, contact, link}) {
     return (
         <ContactItemStyled>
             <div className="left-content">
@@ -12,7 +12,8 @@ function ContactItem({title, icon, contact1}) {
             </div>
             <div className="right-content">
                 <h6>{title}</h6>
-                <p>{contact1}</p>
+                {!link && <p>{contact}</p>}
+                {link && <a href={link}>{contact}</a>}
             </div>
         </ContactItemStyled>
     )

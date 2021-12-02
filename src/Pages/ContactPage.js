@@ -103,16 +103,17 @@ function ContactPage() {
             </form>
           </div>
           <div className="right-content">
-            <ContactItem title={"Phone"} icon={phone} contact1={"9657129663"} />
+            <ContactItem title={"Phone"} icon={phone} contact={"9657129663"} link={"tel:9657129663"} />
             <ContactItem
               title={"Email"}
               icon={email}
-              contact1={"mutharonak97@gmail.com"}
+              contact={"mutharonak97@gmail.com"}
+              link={"mailto:mutharonak97@gmail.com"}
             />
             <ContactItem
               title={"Address"}
               icon={location}
-              contact1={"Pune, Maharshtra"}
+              contact={"Pune, Maharshtra"}
             />
           </div>
         </InnerLayout>
