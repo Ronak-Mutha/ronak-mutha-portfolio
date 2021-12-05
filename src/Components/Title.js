@@ -49,6 +49,16 @@ const TitleStyled = styled.div`
       border-radius: 15px;
       left: 0;
     }
+    @media screen and (max-width: 620px) {
+      &::before {
+      bottom: .38rem;
+      left:.12rem;
+    }
+    &::after {
+      bottom: .38rem;
+      left:.12rem;
+      }
+    }
     @media screen and (max-width: 496px) {
       &::before {
       bottom: .6rem;
@@ -62,7 +72,8 @@ const TitleStyled = styled.div`
 
     span {
       font-weight: 900;
-      color: rgba(25, 29, 43, 0.44);
+      color: var(--span-color);
+      opacity: 0.4;
       font-size: 5rem;
       position: absolute;
       left: 0;
@@ -70,6 +81,7 @@ const TitleStyled = styled.div`
       z-index: -1;
       @media screen and (max-width: 620px) {
         font-size: 4rem;
+        top:38%;
       }
       @media screen and (max-width: 496px) {
         font-size: 3rem;
