@@ -2,8 +2,7 @@ import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import Sidebar from "./Components/Sidebar";
 import HomePage from "./Pages/HomePage";
-import PageNotFound from "./Pages/PageNotFound";
-import { Route, Routes } from "react-router";
+import { Route, Routes,Navigate } from "react-router";
 import AboutPage from "./Pages/AboutPage";
 import ResumePage from "./Pages/ResumePage";
 import ProjectsPage from "./Pages/ProjectsPage";
@@ -72,7 +71,7 @@ function App() {
           <Route path="/projects" element={<ProjectsPage />} />
           <Route path="/blogs" element={<BlogsPage />} />
           <Route path="/contact" element={<ContactPage />} />
-          <Route path="*" element={<PageNotFound />} />
+          <Route path="*" element={<Navigate replace to="/" />} />
         </Routes>
       </MainContentStyled>
     </div>
