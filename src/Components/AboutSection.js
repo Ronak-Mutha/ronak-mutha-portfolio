@@ -19,7 +19,7 @@ function ImageSection() {
         <p className="paragraph">
           Hello Everyone👋, I am Ronak Mutha. I am a Computer Science grad who
           completed his engineering in 2019. Previously, I've worked as an{" "}
-          <strong>Assistant Software Engineer at TCS</strong> for{" "}
+          <strong>Assistant Systems Engineer at TCS</strong> for{" "}
           <strong>1 year and 3 months</strong>.
         </p>
         <p className="paragraph">
