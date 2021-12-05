@@ -2,13 +2,17 @@ import React from "react";
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 import avatar from "../assets/img/avatar.png";
+import Switch from "@mui/material/Switch";
+import Brightness4Icon from "@mui/icons-material/Brightness4";
 
-function Navigation() {
+
+function Navigation({checked, themeToggler}) {
   return (
     <NavigationStyled>
       <div className="avatar">
         <img src={avatar} alt="" />
       </div>
+     
       <ul className="nav-items">
         <li className="nav-item">
           <NavLink
@@ -65,6 +69,20 @@ function Navigation() {
           </NavLink>
         </li>
       </ul>
+      <div className="theme">
+        <div className="light-dark-mode">
+          <div className="left-content">
+            <Brightness4Icon />
+          </div>
+          <div className="right-content">
+            <Switch
+              checked={checked}
+              size="medium"
+              onClick={themeToggler}
+            />
+          </div>
+        </div>
+      </div>
       <footer className="footer">
         <p>
           Copyright &copy; {new Date().getFullYear()}, <b>Ronak Mutha</b>

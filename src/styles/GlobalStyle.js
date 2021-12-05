@@ -103,15 +103,15 @@ h6{
     margin-bottom: 4rem;
 }
 
+.theme{
+    display:grid;
+    place-items: center;
+}
 
 //Floting theme Toggler
 .light-dark-mode{
-    position: fixed;
-    right: 0;
-    top: 50%;
+    position: absolute;
     background-color: var(--background-light-color-2);
-    width: 6.5rem;
-    height: 2.5rem;
     z-index: 15;
     display: flex;
     align-items: center;

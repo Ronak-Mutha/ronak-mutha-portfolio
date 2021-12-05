@@ -2,15 +2,13 @@ import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import Sidebar from "./Components/Sidebar";
 import HomePage from "./Pages/HomePage";
-import { Route, Routes,Navigate } from "react-router";
+import { Route, Routes, Navigate } from "react-router";
 import AboutPage from "./Pages/AboutPage";
 import ResumePage from "./Pages/ResumePage";
 import ProjectsPage from "./Pages/ProjectsPage";
 import BlogsPage from "./Pages/BlogsPage";
 import ContactPage from "./Pages/ContactPage";
-import Brightness4Icon from "@mui/icons-material/Brightness4";
 import MenuIcon from "@mui/icons-material/Menu";
-import Switch from "@mui/material/Switch";
 import { IconButton } from "@mui/material";
 
 function App() {
@@ -33,23 +31,11 @@ function App() {
   };
   return (
     <div className="App">
-      <Sidebar navToggle={navToggle} />
-
-      <div className="theme">
-        <div className="light-dark-mode">
-          <div className="left-content">
-            <Brightness4Icon />
-          </div>
-          <div className="right-content">
-            <Switch
-              value=""
-              checked={checked}
-              size="medium"
-              onClick={themeToggler}
-            />
-          </div>
-        </div>
-      </div>
+      <Sidebar
+        navToggle={navToggle}
+        checked={checked}
+        themeToggler={themeToggler}
+      />
 
       <div className="ham-burger-menu">
         <IconButton onClick={() => setNavToggle(!navToggle)}>
