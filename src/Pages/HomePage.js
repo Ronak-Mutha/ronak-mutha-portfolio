@@ -8,7 +8,7 @@ import Particle from "../Components/Particle";
 function HomePage() {
   return (
     <HomePageStyled>
-      <div className="particle-con">
+      <div className="particle-container">
         <Particle />
       </div>
       <div className="typography">
