@@ -10,7 +10,7 @@ function Navigation({checked, themeToggler}) {
   return (
     <NavigationStyled>
       <div className="avatar">
-        <img src={avatar} alt="" />
+        <img src={avatar} alt="Avatar" />
       </div>
      
       <ul className="nav-items">
