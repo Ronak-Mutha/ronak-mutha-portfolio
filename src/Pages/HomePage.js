@@ -74,6 +74,7 @@ const HomePageStyled = styled.header`
 
     p {
       text-align: left;
+      hyphens: auto;
     }
   }
 
