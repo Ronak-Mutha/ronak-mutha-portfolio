@@ -24,14 +24,29 @@ function HomePage() {
         <div className="icons">
           <a
             href="https://www.linkedin.com/in/ronak-d-mutha"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Linkedin"
             className="icon i-linkedin"
           >
             <LinkedInIcon />
           </a>
-          <a href="https://github.com/Ronak-Mutha/" className="icon i-github">
+          <a
+            href="https://github.com/Ronak-Mutha/"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Github"
+            className="icon i-github"
+          >
             <GithubIcon />
           </a>
-          <a href="https://twitter.com/ronakmutha97" className="icon i-twitter">
+          <a
+            href="https://twitter.com/ronakmutha97"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Twitter"
+            className="icon i-twitter"
+          >
             <TwitterIcon />
           </a>
         </div>
