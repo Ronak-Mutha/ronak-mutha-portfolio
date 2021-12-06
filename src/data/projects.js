@@ -1,11 +1,13 @@
-import portfolio from "../assets/img/projects/portfolio.png";
-import neogcamp from "../assets/img/projects/neogcamp-portfolio.png";
+import Portfolio from "../assets/img/projects/portfolio.png";
+import Neogcamp from "../assets/img/projects/neogcamp-portfolio.png";
+import TextUtils from "../assets/img/projects/text-utils.png";
+import Contact from "../assets/img/projects/contact-app.png";
 
 const portfolios = [
   {
     id: 1,
     category: "React",
-    image: portfolio,
+    image: Portfolio,
     github: "https://github.com/Ronak-Mutha/ronak-mutha-portfolio",
     website: "https://ronak-mutha.netlify.app",
     title: "Personal Portfolio",
@@ -15,12 +17,32 @@ const portfolios = [
   {
     id: 2,
     category: "JavaScript",
-    image: neogcamp,
+    image: Neogcamp,
     github: "https://github.com/Ronak-Mutha/ronak-mutha",
     website: "https://ronak-mutha-portfolio.netlify.app/",
     title: "Neogcamp Portfolio",
     text: "Portfolio website for showcasing projects and blogs created for Neogcamp(Full Stack Bootcamp) level zero.",
     alt: "Neogcamp Portfolio",
+  },
+  {
+    id: 3,
+    category: "React",
+    image: TextUtils,
+    github: "https://github.com/Ronak-Mutha/text-utils",
+    website: "https://text-utilss.netlify.app/",
+    title: "Text Utils",
+    text: "Text-Utils is a word counter and a character counting utility that can be used to manipulate your text in the way you want.",
+    alt: "Neogcamp Portfolio",
+  },
+  {
+    id: 4,
+    category: "React",
+    image: Contact,
+    github: "https://github.com/Ronak-Mutha/contact-app",
+    website: "https://contact-app-ronak.herokuapp.com/",
+    title: "Contact Manager",
+    text: "Contact Manager helps you to manage you contacts. You can create, read, modify, and delete contacts. You can also search for a contact.",
+    alt: "Contact Manager",
   },
 ];
 
