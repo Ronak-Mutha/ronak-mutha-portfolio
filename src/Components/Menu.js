@@ -62,7 +62,7 @@ const MenuItemStyled = styled.div`
       img {
         width: 100%;
         height: 50vh;
-        object-fit: fit;
+        object-fit: contain;
       }
       ul {
         transform: translateY(-600px);
