@@ -10,13 +10,13 @@ import BlogsPage from "./Pages/BlogsPage";
 import ContactPage from "./Pages/ContactPage";
 import MenuIcon from "@mui/icons-material/Menu";
 import { IconButton } from "@mui/material";
-import CloseIcon from '@mui/icons-material/Close';
+import CloseIcon from "@mui/icons-material/Close";
 
 function App() {
   const [theme, setTheme] = useState("dark-theme");
   const [checked, setChecked] = useState(false);
   const [navToggle, setNavToggle] = useState(false);
-  const [ isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     document.documentElement.className = theme;
@@ -40,10 +40,13 @@ function App() {
       />
 
       <div className="ham-burger-menu">
-        <IconButton onClick={() => {
-          setNavToggle(!navToggle);
-          setIsOpen(!isOpen);
-          }}>
+        <IconButton
+          aria-label="menu"
+          onClick={() => {
+            setNavToggle(!navToggle);
+            setIsOpen(!isOpen);
+          }}
+        >
           {!isOpen ? <MenuIcon /> : <CloseIcon />}
         </IconButton>
       </div>
