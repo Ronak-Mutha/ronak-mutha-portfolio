@@ -76,6 +76,7 @@ function Navigation({checked, themeToggler}) {
           </div>
           <div className="right-content">
             <Switch
+            value="dark" inputProps={{ 'aria-label': 'Theme toggle switch' }} 
               checked={checked}
               size="medium"
               onClick={themeToggler}
