@@ -24,7 +24,20 @@ const ContactItemStyled = styled.div`
   display: flex;
   align-items: center;
   @media screen and (max-width: 502px) {
-    width: 95%;
+    width: 100%;
+    font-size: 1rem;
+    padding: 1rem 1rem;
+    .left-content {
+      padding: 0.5rem;
+      margin-right: 0.5rem;
+
+      svg {
+        font-size: 0.5rem;
+      }
+    }
+    .contact-link {
+      word-break: break-all;
+    }
   }
   &:not(:last-child) {
     margin-bottom: 2.5rem;
