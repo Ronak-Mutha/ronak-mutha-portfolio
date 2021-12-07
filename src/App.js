@@ -1,16 +1,17 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Suspense, lazy } from "react";
 import styled from "styled-components";
-import Sidebar from "./Components/Sidebar";
+import Sidebar from "./Components/Sidebar"
 import HomePage from "./Pages/HomePage";
 import { Route, Routes, Navigate } from "react-router";
-import AboutPage from "./Pages/AboutPage";
-import ResumePage from "./Pages/ResumePage";
-import ProjectsPage from "./Pages/ProjectsPage";
-import BlogsPage from "./Pages/BlogsPage";
-import ContactPage from "./Pages/ContactPage";
 import MenuIcon from "@mui/icons-material/Menu";
 import { IconButton } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
+
+const AboutPage = lazy(() => import("./Pages/AboutPage"));
+const ResumePage = lazy(() => import("./Pages/ResumePage"));
+const ProjectsPage = lazy(() => import("./Pages/ProjectsPage"));
+const BlogsPage = lazy(() => import("./Pages/BlogsPage"));
+const ContactPage = lazy(() => import("./Pages/ContactPage"));
 
 function App() {
   const [theme, setTheme] = useState("dark-theme");
@@ -33,12 +34,11 @@ function App() {
   };
   return (
     <div className="App">
-      <Sidebar
-        navToggle={navToggle}
-        checked={checked}
-        themeToggler={themeToggler}
-      />
-
+        <Sidebar
+          navToggle={navToggle}
+          checked={checked}
+          themeToggler={themeToggler}
+        />
       <div className="ham-burger-menu">
         <IconButton
           aria-label="menu"
@@ -60,11 +60,49 @@ function App() {
         </div>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/resume" element={<ResumePage />} />
-          <Route path="/projects" element={<ProjectsPage />} />
-          <Route path="/blogs" element={<BlogsPage />} />
-          <Route path="/contact" element={<ContactPage />} />
+          <Route
+            path="/about"
+            element={
+              <Suspense fallback={<div>Loading</div>}>
+                <AboutPage />
+              </Suspense>
+            }
+          />
+          <Route
+            path="/resume"
+            element={
+              <Suspense fallback={<div>Loading</div>}>
+                <ResumePage />
+              </Suspense>
+            }
+          />
+          <Route
+            path="/projects"
+            element={
+              <Suspense fallback={<div>Loading</div>}>
+                <ProjectsPage />
+              </Suspense>
+            }
+          />
+
+          <Route
+            path="/blogs"
+            element={
+              <Suspense fallback={<div>Loading</div>}>
+                <BlogsPage />
+              </Suspense>
+            }
+          />
+
+          <Route
+            path="/contact"
+            element={
+              <Suspense fallback={<div>Loading</div>}>
+                <ContactPage />
+              </Suspense>
+            }
+          />
+
           <Route path="*" element={<Navigate replace to="/" />} />
         </Routes>
       </MainContentStyled>
