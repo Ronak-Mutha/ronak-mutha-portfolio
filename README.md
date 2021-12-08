@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# Ronak Mutha's Portfolio
+## About Me
+- Hello, I'm Ronak Mutha. A Web Developer from Pune, India, passionate about learning the latest technologies in the web development domain. I enjoy implementing my learning by creating user-friendly products.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- I am a Computer Science grad who completed his engineering in 2019. Previously, I've worked as an Assistant Systems Engineer at TCS for 1 year and 3 months.
 
-## Available Scripts
+- I've been playing around the web development for quite a while now. I'll also be joining Neogcamp (Fullstack Bootcamp) in January 2022 to improve my existing knowledge of React and learn backend technologies like Nodejs, Express, Mongoose, and MongoDB.
 
-In the project directory, you can run:
+---
+## Current known languages/tools : 
 
-### `npm start`
+> **_HTML, CSS, JavaScript, React, SQL, Oracle, Putty, Unix, and Git/GitHub_**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+---
+## Portfolio in different resolution
+- **Desktop**
+![Desktop Screen](/src/assets/img/projects/portfolio.webp)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- **Tablet**
+![iPad Screen](/src/assets/img/portfolio-ipad.webp)
 
-### `npm test`
+- **Mobile**
+![Pixel 2 Screen](/src/assets/img/portfolio-pixel-2.webp)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Learnings 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+> I finally built my portfolio 🥳🥳
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+> Was it an easy ride? Nope.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+> Did you learn from it? A lot.
 
-### `npm run eject`
+So here's the story. Finally decided to look for a job that required proof of work. And you have to showcase your skills then I realized what's better than a portfolio website. That'll also improve my React skills and help me revise Basic Concepts. While creating this portfolio, I got to learn a lot of stuff like using React, how to route to different pages through react-router, how to style using styled-components, adding background particles effect using tsparticles, how to get integrate icons from Material Ui to your react-app, using HTTP headers for increasing security, meta tags and page structure for SEO, react-toastify for toast messages, emailjs for integrating email service to contact form, compressing  .png images and then converting to .webp for faster loading of images, using media-queries for responsiveness, react-lazy and suspense for splitting and getting the FP - FMP as soon as possible, and finally host it with Netlify.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## How I improved my Performance Score from 30+ to 90+ and Security Score from F to A+
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+For performance optimization -
+- I compressed my images and converted them to a newer format like _webp_.  
+- I preloaded my fonts as they took a lot of time, due to which website was taking time for FP, still not much performance improvement as expected and the size of _build chunks_ were still huge.
+- So, I used react-lazy and Suspense to split the code according to their priority and based on routes. And voila, the performance improved drastically.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+For Security Headers -
+- I didn't know about this before. I might have learned about this during my engineering, but never implemented it. So when I came across the _F_ score in terms of security on the [webpagetest.com](https://www.webpagetest.org/) site. I researched different HTTP headers and their usage. 
+- I checked for the header used in sites with an A+ score and then checked on MDN docs and applied HTTP headers to this portfolio website as well using the knowledge gained from MDN docs and Netlify docs. After that had an A+ score on the [securityheaders.com](https://securityheaders.com/) website.
+### Results
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- __GTMetrics__ 
+![GTMetrics](/src/assets/img/performance/gtmetrics.webp)
 
-## Learn More
+- __PageSpeed Insights__
+![PageSpeed Insights](/src/assets/img/performance/pagespeed-insights.webp)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- __Security Headers__
+![Security Headers](/src/assets/img/performance/security-headers.webp)
