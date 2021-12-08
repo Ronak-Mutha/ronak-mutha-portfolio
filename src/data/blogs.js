@@ -1,5 +1,5 @@
-import blog1 from "../assets/img/blogs/blog1.jpg";
-import blog2 from "../assets/img/blogs/blog2.jpg";
+import blog1 from "../assets/img/blogs/blog1.webp";
+import blog2 from "../assets/img/blogs/blog2.webp";
 
 const blogs = [
   {

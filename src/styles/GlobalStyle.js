@@ -113,8 +113,8 @@ h6{
 //Floting theme Toggler
 .light-dark-mode{
     position: absolute;
-    background-color: var(--background-light-color-2);
-    z-index: 15;
+    top: 10%;
+    z-index: 25;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -132,7 +132,7 @@ h6{
       right: 2%;
       top: 3%; 
       display: none;
-      z-index: 15;
+      z-index: 100;
       svg{
           font-size: 3rem;
           color: var(--primary-color);

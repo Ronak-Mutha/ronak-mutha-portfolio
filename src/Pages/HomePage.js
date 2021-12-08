@@ -4,6 +4,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GithubIcon from "@mui/icons-material/GitHub";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import Particle from "../Components/Particle";
+import avatar from "../assets/img/avatar.webp";
 
 function HomePage() {
   return (
@@ -12,6 +13,9 @@ function HomePage() {
         <Particle />
       </div>
       <div className="typography">
+        <div className="avatar">
+          <img src={avatar} alt="Avatar" />
+        </div>
         <h1>
           Hello, I'm <span>Ronak Mutha</span>
         </h1>
@@ -59,6 +63,30 @@ const HomePageStyled = styled.header`
   width: 100%;
   height: 100vh;
   position: relative;
+  .avatar {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 1rem auto;
+    max-width: 500px;
+    max-height: 250px;
+    padding: 1rem auto;
+    img {
+      display: block;
+      height: 100%;
+      width: 50%;
+      border-radius: 50%;
+      border: 8px solid var(--border-color);
+    }
+  }
+  @media screen and (max-width: 792px) {
+    img {
+      display: block;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
   h1 {
     font-size: 2rem;
   }
@@ -66,7 +94,7 @@ const HomePageStyled = styled.header`
     font-size: 4rem;
     color: var(--primary-color);
   }
-  @media screen and (max-width: 502px) {
+  @media screen and (max-width: 792px) {
     span {
       font-size: 2.6rem;
       display: block;

@@ -1,7 +1,7 @@
-import Portfolio from "../assets/img/projects/portfolio.png";
-import Neogcamp from "../assets/img/projects/neogcamp-portfolio.png";
-import TextUtils from "../assets/img/projects/text-utils.png";
-import Contact from "../assets/img/projects/contact-app.png";
+import Portfolio from "../assets/img/projects/portfolio.webp";
+import Neogcamp from "../assets/img/projects/neogcamp-portfolio.webp";
+import TextUtils from "../assets/img/projects/text-utils.webp";
+import Contact from "../assets/img/projects/contact-app.webp";
 
 const portfolios = [
   {

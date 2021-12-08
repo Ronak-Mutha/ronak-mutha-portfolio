@@ -56,12 +56,16 @@ const MenuItemStyled = styled.div`
       display: block;
       position: relative;
       overflow: hidden;
+
+      .portfolio-image{
+        position: relative;
+      }
       h6 {
         font-size: 1.5rem;
       }
       img {
         width: 100%;
-        height: 50vh;
+        height: 33vh;
         object-fit: contain;
       }
       ul {
@@ -69,7 +73,7 @@ const MenuItemStyled = styled.div`
         transition: all 0.4s ease-in-out;
         position: absolute;
         left: 50%;
-        top: 40%;
+        top: 50%;
         opacity: 0;
         li {
           background-color: var(--border-color);

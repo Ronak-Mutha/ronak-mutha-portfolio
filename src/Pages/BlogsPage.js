@@ -62,7 +62,6 @@ const BlogsStyled = styled.div`
     }
     .title {
       font-size: 1.5rem;
-      padding: 2rem 0;
       color: var(--white-color);
       cursor: pointer;
       transition: all 0.4s ease-in-out;

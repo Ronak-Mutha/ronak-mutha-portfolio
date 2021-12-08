@@ -1,9 +1,9 @@
-import HTML from "../assets/img/skills/html.png";
-import CSS from "../assets/img/skills/css.png";
-import Javascript from "../assets/img/skills/js.png";
-import React from "../assets/img/skills/react.png";
-import Git from "../assets/img/skills/git.png";
-import Github from "../assets/img/skills/github.png";
+import HTML from "../assets/img/skills/html.webp";
+import CSS from "../assets/img/skills/css.webp";
+import Javascript from "../assets/img/skills/js.webp";
+import React from "../assets/img/skills/react.webp";
+import Git from "../assets/img/skills/git.webp";
+import Github from "../assets/img/skills/github.webp";
 
 const skills = [
   {

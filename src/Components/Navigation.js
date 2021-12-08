@@ -1,18 +1,28 @@
 import React from "react";
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
-import avatar from "../assets/img/avatar.png";
 import Switch from "@mui/material/Switch";
 import Brightness4Icon from "@mui/icons-material/Brightness4";
 
-
-function Navigation({checked, themeToggler}) {
+function Navigation({ checked, themeToggler }) {
   return (
     <NavigationStyled>
-      <div className="avatar">
-        <img src={avatar} alt="Avatar" />
+      <div className="theme">
+        <div className="light-dark-mode">
+          <div className="left-content">
+            <Brightness4Icon />
+          </div>
+          <div className="right-content">
+            <Switch
+              value="dark"
+              inputProps={{ "aria-label": "Theme toggle switch" }}
+              checked={checked}
+              size="medium"
+              onClick={themeToggler}
+            />
+          </div>
+        </div>
       </div>
-     
       <ul className="nav-items">
         <li className="nav-item">
           <NavLink
@@ -69,21 +79,7 @@ function Navigation({checked, themeToggler}) {
           </NavLink>
         </li>
       </ul>
-      <div className="theme">
-        <div className="light-dark-mode">
-          <div className="left-content">
-            <Brightness4Icon />
-          </div>
-          <div className="right-content">
-            <Switch
-            value="dark" inputProps={{ 'aria-label': 'Theme toggle switch' }} 
-              checked={checked}
-              size="medium"
-              onClick={themeToggler}
-            />
-          </div>
-        </div>
-      </div>
+
       <footer className="footer">
         <p>
           Copyright &copy; {new Date().getFullYear()}, <b>Ronak Mutha</b>
@@ -101,17 +97,6 @@ const NavigationStyled = styled.nav`
   height: 100%;
   width: 100%;
   border-right: 1px solid var(--border-color);
-  .avatar {
-    width: 100%;
-    border-bottom: 1px solid var(--border-color);
-    text-align: center;
-    padding: 1rem 0;
-    img {
-      width: 70%;
-      border-radius: 50%;
-      border: 8px solid var(--border-color);
-    }
-  }
   .nav-items {
     width: 100%;
     text-align: center;

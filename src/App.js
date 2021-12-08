@@ -1,11 +1,12 @@
 import React, { useState, useEffect, Suspense, lazy } from "react";
 import styled from "styled-components";
-import Sidebar from "./Components/Sidebar"
+import Sidebar from "./Components/Sidebar";
 import HomePage from "./Pages/HomePage";
 import { Route, Routes, Navigate } from "react-router";
 import MenuIcon from "@mui/icons-material/Menu";
 import { IconButton } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
+import CircularProgress from "@mui/material/CircularProgress";
 
 const AboutPage = lazy(() => import("./Pages/AboutPage"));
 const ResumePage = lazy(() => import("./Pages/ResumePage"));
@@ -34,11 +35,11 @@ function App() {
   };
   return (
     <div className="App">
-        <Sidebar
-          navToggle={navToggle}
-          checked={checked}
-          themeToggler={themeToggler}
-        />
+      <Sidebar
+        navToggle={navToggle}
+        checked={checked}
+        themeToggler={themeToggler}
+      />
       <div className="ham-burger-menu">
         <IconButton
           aria-label="menu"
@@ -63,7 +64,7 @@ function App() {
           <Route
             path="/about"
             element={
-              <Suspense fallback={<div>Loading</div>}>
+              <Suspense fallback={<CircularProgress color="inherit" />}>
                 <AboutPage />
               </Suspense>
             }
@@ -71,7 +72,7 @@ function App() {
           <Route
             path="/resume"
             element={
-              <Suspense fallback={<div>Loading</div>}>
+              <Suspense fallback={<CircularProgress color="inherit" />}>
                 <ResumePage />
               </Suspense>
             }
@@ -79,7 +80,7 @@ function App() {
           <Route
             path="/projects"
             element={
-              <Suspense fallback={<div>Loading</div>}>
+              <Suspense fallback={<CircularProgress color="inherit" />}>
                 <ProjectsPage />
               </Suspense>
             }
@@ -88,7 +89,7 @@ function App() {
           <Route
             path="/blogs"
             element={
-              <Suspense fallback={<div>Loading</div>}>
+              <Suspense fallback={<CircularProgress color="inherit" />}>
                 <BlogsPage />
               </Suspense>
             }
@@ -97,7 +98,7 @@ function App() {
           <Route
             path="/contact"
             element={
-              <Suspense fallback={<div>Loading</div>}>
+              <Suspense fallback={<CircularProgress color="inherit" />}>
                 <ContactPage />
               </Suspense>
             }
