@@ -32,13 +32,13 @@
 
 > Did you learn from it? A lot.
 
-So here's the story. Finally decided to look for a job that required proof of work. And you have to showcase your skills then I realized what's better than a portfolio website. That'll also improve my React skills and help me revise Basic Concepts. While creating this portfolio, I got to learn a lot of stuff like using React, how to route to different pages through react-router, how to style using styled-components, adding background particles effect using tsparticles, how to get integrate icons from Material Ui to your react-app, using HTTP headers for increasing security, meta tags and page structure for SEO, react-toastify for toast messages, emailjs for integrating email service to contact form, compressing  .png images and then converting to .webp for faster loading of images, using media-queries for responsiveness, react-lazy and suspense for splitting and getting the FP - FMP as soon as possible, and finally host it with Netlify.
+So here's the story. Finally decided to look for a job that required proof of work. And you have to showcase your skills then I realized what's better than a portfolio website. That'll also improve my React skills and help me revise Basic Concepts. While creating this portfolio, I got to learn a lot of stuff like using React, how to route to different pages through react-router, how to style using styled-components, adding background particles effect using tsparticles, how to get integrate icons from Material Ui to your react-app, using HTTP headers for increasing security, meta tags and page structure for SEO, react-toastify for toast messages, emailjs for integrating email service to contact form, compressing  .png images and then converting to .webp for faster loading of images, using media-queries for responsiveness, react-lazy and suspense for splitting and getting the FCP - FMP as soon as possible, and finally host it with Netlify.
 
 ## How I improved my Performance Score from 30+ to 90+ and Security Score from F to A+
 
 For performance optimization -
 - I compressed my images and converted them to a newer format like _webp_.  
-- I preloaded my fonts as they took a lot of time, due to which website was taking time for FP, still not much performance improvement as expected and the size of _build chunks_ were still huge.
+- I preloaded my fonts as they took a lot of time, due to which website was taking time for FCP, still not much performance improvement as expected and the size of _build chunks_ were still huge.
 - So, I used react-lazy and Suspense to split the code according to their priority and based on routes. And voila, the performance improved drastically.
 
 For Security Headers -
