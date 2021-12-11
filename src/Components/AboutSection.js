@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import PrimaryLink from "../styles/PrimaryLink";
-import Resume from '../assets/docs/ronak-mutha-resume.pdf';
 
 function ImageSection() {
   function getAge() {
@@ -39,15 +38,16 @@ function ImageSection() {
           </div>
           <div className="info">
             <p>: Ronak Mutha</p>
-            <p>: {getAge()}</p>
+            <p>: {getAge}</p>
             <p>: English, Hindi </p>
             <p>: Pune, Maharashtra</p>
             <p>: Can join immediately</p>
           </div>
         </div>
         <PrimaryLink
-          href={Resume}
-          download='ronak-mutha-resume'
+          href="https://drive.google.com/file/d/13RrB-5XZJCh8CPiAaONiGpjUgbOtIaPD/view?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           Download Resume{" "}
         </PrimaryLink>
@@ -57,36 +57,37 @@ function ImageSection() {
 }
 
 const ImageSectionStyled = styled.div`
-    margin-top: 5rem;
-    display: flex;
+  margin-top: 5rem;
+  display: flex;
 
-    .content{
-        width: 100%;
-        h4{
-            font-size: 2rem;
-            color: var(--white-color);
-            span{
-                font-size: 2rem;
-            }
-        }
-        .paragraph{
-            padding: 1rem 0;
-        }
-        .about-info{
-            display: flex;
-            padding-bottom: 1.4rem;
-            .info-title{
-                padding-right: 3rem;
-                p{
-                    font-weight: 600;
-                }
-            }
-            .info-title, .info{
-                p{
-                    padding: .3rem 0;
-                }
-            }
-        }
+  .content {
+    width: 100%;
+    h4 {
+      font-size: 2rem;
+      color: var(--white-color);
+      span {
+        font-size: 2rem;
+      }
     }
+    .paragraph {
+      padding: 1rem 0;
+    }
+    .about-info {
+      display: flex;
+      padding-bottom: 1.4rem;
+      .info-title {
+        padding-right: 3rem;
+        p {
+          font-weight: 600;
+        }
+      }
+      .info-title,
+      .info {
+        p {
+          padding: 0.3rem 0;
+        }
+      }
+    }
+  }
 `;
 export default ImageSection;
