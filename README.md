@@ -46,8 +46,8 @@ For Security Headers -
 - I checked for the header used in sites with an A+ score and then checked on MDN docs and applied HTTP headers to this portfolio website as well using the knowledge gained from MDN docs and Netlify docs. After that had an A+ score on the [securityheaders.com](https://securityheaders.com/) website.
 ### Results
 
-- __GTMetrics__ 
-![GTMetrics](/src/assets/img/performance/gtmetrics.webp)
+- __GTMetrix__ 
+![GTMetrix](/src/assets/img/performance/gtmetrix.webp)
 
 - __PageSpeed Insights__
 ![PageSpeed Insights](/src/assets/img/performance/pagespeed-insights.webp)
