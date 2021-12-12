@@ -38,7 +38,7 @@ function ImageSection() {
           </div>
           <div className="info">
             <p>: Ronak Mutha</p>
-            <p>: {getAge}</p>
+            <p>: {getAge()}</p>
             <p>: English, Hindi </p>
             <p>: Pune, Maharashtra</p>
             <p>: Can join immediately</p>
