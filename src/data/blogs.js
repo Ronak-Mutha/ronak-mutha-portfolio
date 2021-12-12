@@ -7,7 +7,7 @@ const blogs = [
     title: "Ultimate guide for Emmet: Speed up your html workflow",
     creation_date: "22 September 2021",
     image: blog1,
-    link: "https://ronak-mutha.netlify.app/blogs/blog-01.html",
+    link: "https://ronak-mutha-portfolio.netlify.app/blogs/blog-01.html",
     alt: 'Emmet Guide'
   },
   {
@@ -16,7 +16,7 @@ const blogs = [
       "JavaScript Arrays and its methods: Still a Better Love Story than Twilight",
     creation_date: "23 September 2021",
     image: blog2,
-    link: "https://ronak-mutha.netlify.app/blogs/blog-02.html",
+    link: "https://ronak-mutha-portfolio.netlify.app/blogs/blog-02.html",
     alt: 'Arrays in JS'
   },
 ];
